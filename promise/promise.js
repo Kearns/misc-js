@@ -10,8 +10,8 @@ function examplePromise() {
 
     // We make a new promise: we promise the string 'result' (after waiting 3s)
     var promise = new Promise(
-        // The resolver function is called with the ability to resolve or
-        // reject the promise
+        /* The resolver function is called with the ability to resolve or
+        /* reject the promise */
         function(resolve, reject) {
             log.insertAdjacentHTML('beforeend', 'Promise started (<small>Async code started</small>)<br/>');
             // This is only an example to create asynchronism
@@ -22,8 +22,8 @@ function examplePromise() {
                 }, Math.random() * 2000 + 1000);
         });
 
-    // We define what to do when the promise is fulfilled
-    // but we only call this if the promise is resolved/fulfilled
+    /* We define what to do when the promise is fulfilled
+    /* but we only call this if the promise is resolved/fulfilled */
     promise.then(
         // Just log the message and a value
         function(val) {
