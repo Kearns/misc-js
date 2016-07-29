@@ -23,24 +23,24 @@ function observe(elToObserve,callback, args){
  observer.observerConfig = {
 
     /* Child List -
-    /* Observe changes to this element's child elements  */
+    ** Observe changes to this element's child elements  */
   	childList: args.childList !== undefined ? args.childList : true,
 
     /* Attributes -
-    /* Observe changes to this element's attributes
-    /* attributeOldValue: Save the previous value when changes to attributes occur
-    /* Atribute Filter: Limits observation to the specified attributes  */
+    ** Observe changes to this element's attributes
+    ** attributeOldValue: Save the previous value when changes to attributes occur
+    ** Atribute Filter: Limits observation to the specified attributes  */
     attributes: args.attributes !== undefined ? args.attributes : true,
   	attributeOldValue: args.attributeOldValue !== undefined ? args.attributeOldValue : false,
     attributeFilter: args.attributeFilter,
 
     /* Character Data -
-    /* Observe changes to this element's text nodes
-    /* attributeOldValue: Save the previous value when changes to characterData occur */
+    ** Observe changes to this element's text nodes
+    ** attributeOldValue: Save the previous value when changes to characterData occur */
   	characterData: args.characterData !== undefined ? args.characterData : true,
   	characterDataOldValue: args.characterDataOldValue !== undefined ? args.characterDataOldValue : false,
 
-    //To monitor the given element and all its descendants
+    // To monitor the given element and all its descendants
   	subTree: args.subtree !== undefined ? args.subtree : false
   };
 
@@ -57,7 +57,7 @@ function observe(elToObserve,callback, args){
     console.log(m)
   }
 
-  //------ EXAMPLE -------------------
+  // EXAMPLE
 
   var observeThis = document.getElementById("observeThis");
   var observ = observe(observeThis,
