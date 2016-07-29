@@ -1,9 +1,9 @@
 /* Example of jQuery-esque chainable methods
-/* using a constructor acting as an "editor" object
-/* and a seperate selector instantiating it */
+** using a constructor acting as an "editor" object
+** and a seperate selector instantiating it */
 
 /* Selector function which grabs an element and
-/* returns a new Editor object */
+** returns a new Editor object */
 function $(id) {
  // Select an element and return a new Editor object
   var el = document.querySelector(id);
@@ -11,7 +11,7 @@ function $(id) {
 }
 
 /* Editor constructor, holds chainable functions
-/* and a variable to hold the element. */
+** and a variable to hold the element. */
 function Editor(el){
 
   // currentEl will hold the selected element
@@ -32,6 +32,6 @@ function Editor(el){
   };
 }
 
-//------ EXAMPLE -------------------
 
+// EXAMPLE
 $("#editThis").text("Chaining methods is easy").css("color","blue");
