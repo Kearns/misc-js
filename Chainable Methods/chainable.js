@@ -18,14 +18,14 @@ function Editor(el){
   this.currentEl = el;
 
   /* An example of a text editing method,
-  /* will add text to selected element */
+  ** will add text to selected element */
   this.text = function(text) {
     this.currentEl.textContent = text;
     return this;
   };
 
   /* An example of a style editing method,
-  /* will updated style on selected element */
+  ** will updated style on selected element */
   this.css = function(property,value) {
     this.currentEl.style[property] = value;
     return this;
